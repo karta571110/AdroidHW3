@@ -37,15 +37,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="38dp"
                 android:layout_weight="1"
-                android:text="攝氏溫度:" />
+                android:text="溫度:" />
 
             <EditText
-                android:id="@+id/Temp"
+                android:id="@+id/Temperature"
                 android:layout_width="wrap_content"
                 android:layout_height="84dp"
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="143dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="°C" />
         </LinearLayout>
 
         <LinearLayout
@@ -55,7 +62,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/Transform"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -66,21 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="33dp"
-                android:layout_weight="1"
-                android:text="華氏溫度:" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="335dp"
-                android:layout_height="34dp"
-                android:layout_weight="1" />
-        </LinearLayout>
+            android:orientation="horizontal"/>
 
         <LinearLayout
             android:layout_width="match_parent"

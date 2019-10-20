@@ -32,24 +32,25 @@ public class MainActivity extends AppCompatActivity {
                     if (!("".equals(Temp.getText().toString())) && unitswitch==true) {
                         Double fT = Double.parseDouble(Temp.getEditableText().toString());
 
-                        Double Fahrenheit = 1.8 * fT + 32;
+                        Double Fahrenheit = (1.8 * fT) + 32;
                         BigDecimal Back=new BigDecimal(Fahrenheit);
                         unit.setText(" °F");
                         Temp.setText(""+Fahrenheit);
-
+                        trans.setText("華氏轉換攝氏");
                        unitswitch=false;
                     }
-                    else if (!("".equals(Temp.getText().toString())) && unitswitch==false) {
+                    else  {
 
 
                         Double fT = Double.parseDouble(Temp.getEditableText().toString());
 
 
 
-                        Double Fahrenheit = (fT-32)*1.8;
+                        Double Fahrenheit = (fT-32)/1.8;
                         BigDecimal Back=new BigDecimal(Fahrenheit);
                         Temp.setText(""+Fahrenheit);
                         unit.setText(" °C");
+                        trans.setText("攝氏轉換華氏");
                         unitswitch=true;
 
                     }
